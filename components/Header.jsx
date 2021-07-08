@@ -7,7 +7,7 @@ export default class Header extends Component {
       <ImageBackground style={ styles.headerBackground } source={require('../img/electricity.gif')}>
         <View style={ styles.header }>
           <View style={ styles.profilePicWrap }>
-            <Image style= { styles.profilePic } source={require('../img/zelfie.png')} />
+            <Image style= { styles.profilePic } source={require('../img/selfie.png')} />
           </View>
           <Text style={styles.name}>JHON TRUJILLO</Text>
           <Text style={styles.pos}> - software engineer - </Text>
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     height: 200,
     borderRadius: 100,
     borderColor:'rgba(0,0,0,0.4)',
-    borderWidth: 10,
+    borderWidth: 13,
   },
   profilePic: {
     flex: 1,

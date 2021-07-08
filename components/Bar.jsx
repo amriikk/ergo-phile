@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AppRegistry, Stylesheet, View, Text } from 'react-native';
+import { AppRegistry, StyleSheet, View, Text } from 'react-native';
 
 export default class Bar extends Component {
     render() {
@@ -10,7 +10,7 @@ export default class Bar extends Component {
                     <Text style={styles.barBottom}>Pokémon</Text>
                 </View>
                 <View style={styles.barItem}>
-                    <Text style={styles.barTop}>13k</Text>
+                    <Text style={styles.barTop}>13 k</Text>
                     <Text style={styles.barBottom}>Victories</Text>
                 </View>
             </View>
@@ -20,9 +20,28 @@ export default class Bar extends Component {
 
 const styles = StyleSheet.create({
     bar: {
-        borderTopColor: '#fff',
+        borderTopColor: '#000080',
         borderTopWidth: 4,
-        backgroundColor: '#ec2c4a',
-        flexDirection: 'row',
+        backgroundColor: '#ec2e4a',
+        flexDirection: 'row'
+    },
+    barSeperator: {
+        borderRightWidth: 4,
+    },
+    barItem: {
+        flex: 1,
+        padding: 18,
+        alightItems: 'center'
+    },
+    barTop: {
+        color: '#fff',
+        fontSize: 16,
+        fontWeight: 'bold',
+        fontStyle: 'italic',
+    },
+    barBottom: {
+        color: '#fff',
+        fontSize: 14,
+        fontWeight: 'bold',
     },
 });
