@@ -1,7 +1,7 @@
-import { AppRegistry, StyleSheet, Text, View, Image, ImageBackground } from 'react-native';
 import React, { Component } from 'react';
+import { AppRegistry, StyleSheet, Text, View, Image, ImageBackground } from 'react-native';
 
-export default class App extends Component {
+export default class ProfilePage extends Component {
   render() {
     return (
       <ImageBackground style={ styles.headerBackground } source={require('./img/electricity.gif')}>
@@ -10,7 +10,7 @@ export default class App extends Component {
             <Image style= { styles.profilePic } source={require('./img/zelfie.png')} />
           </View>
           <Text style={styles.name}>JHON TRUJILLO</Text>
-          <Text style={styles.pos}> - SOFTWARE ENGINEER - </Text>
+          <Text style={styles.pos}> - software engineer - </Text>
         </View>
       </ImageBackground>
     );
@@ -37,8 +37,8 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(130,190,240, 0.9)' //favorite sky blue color
   },
   profilePicWrap: {
-    width: 180,
-    height: 180,
+    width: 200,
+    height: 200,
     borderRadius: 100,
     borderColor:'rgba(0,0,0,0.4)',
     borderWidth: 10,
@@ -58,8 +58,11 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   pos: {
-
+    fontSize: 14,
+    color: '#000080', //navy blue
+    fontWeight: '300',
+    fontStyle: 'italic'
   },
 });
 
-AppRegistry.registerComponent('App', () => App);
+AppRegistry.registerComponent('ProfilePage', () => ProfilePage);
