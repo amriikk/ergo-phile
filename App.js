@@ -1,12 +1,10 @@
-import { StatusBar } from 'expo-status-bar';
 import { AppRegistry, StyleSheet, Text, View, Image, ImageBackground } from 'react-native';
-import zelfie from './img/zelfie.png'
 import React, { Component } from 'react';
 
 export default class App extends Component {
   render() {
     return (
-      <ImageBackground style={ styles.headerBackground } source={require('./img/sharingan.jpeg')}>
+      <ImageBackground style={ styles.headerBackground } source={require('./img/electricity.gif')}>
         <View style={ styles.header }>
           <View style={ styles.profilePicWrap }>
             <Image style= { styles.profilePic } source={require('./img/zelfie.png')} />
@@ -36,18 +34,21 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     padding: 20,
-    backgroundColor: 'rgba(0,0,0, 0.5)'
+    backgroundColor: 'rgba(130,190,240, 0.9)' //favorite sky blue color
   },
   profilePicWrap: {
     width: 180,
     height: 180,
     borderRadius: 100,
-    borderColor:'rgba(0,0,0,0.4)'
+    borderColor:'rgba(0,0,0,0.4)',
+    borderWidth: 10,
   },
   profilePic: {
-    width: 300,
-    height: 460,
-    borderRadius: 16,
+    flex: 1,
+    width: null,
+    alignSelf: 'stretch',
+    borderRadius: 100,
+    borderColor: '#fff'
   },
   name: {
 
