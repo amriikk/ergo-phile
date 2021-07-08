@@ -65,4 +65,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('Header', () => Header);
+// AppRegistry.registerComponent('Header', () => Header); 
