@@ -4,10 +4,10 @@ import { AppRegistry, StyleSheet, Text, View, Image, ImageBackground } from 'rea
 export default class Header extends Component {
   render() {
     return (
-      <ImageBackground style={ styles.headerBackground } source={require('./img/electricity.gif')}>
+      <ImageBackground style={ styles.headerBackground } source={require('../img/electricity.gif')}>
         <View style={ styles.header }>
           <View style={ styles.profilePicWrap }>
-            <Image style= { styles.profilePic } source={require('./img/zelfie.png')} />
+            <Image style= { styles.profilePic } source={require('../img/zelfie.png')} />
           </View>
           <Text style={styles.name}>JHON TRUJILLO</Text>
           <Text style={styles.pos}> - software engineer - </Text>
