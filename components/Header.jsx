@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { AppRegistry, StyleSheet, Text, View, Image, ImageBackground } from 'react-native';
 
-export default class App extends Component {
+export default class Header extends Component {
   render() {
     return (
       <ImageBackground style={ styles.headerBackground } source={require('./img/electricity.gif')}>
@@ -65,4 +65,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('ProfilePage', () => ProfilePage);
+AppRegistry.registerComponent('Header', () => Header);
