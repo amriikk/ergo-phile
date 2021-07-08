@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { AppRegistry, StyleSheet, View } from 'react-native';
+import { AppRegistry, StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 
 import PhotoGrid from './components/PhotoGrid';
 import Header from './components/Header';
+import Button from './components/Button';
 import Bar from './components/Bar';
 
 export default class App extends Component {
@@ -10,7 +11,8 @@ export default class App extends Component {
     return (
       <View style={styles.container}>
         <Header />
-        <Bar />
+        <Bar /> 
+        <Button />
         <PhotoGrid />
       </View>
     );
@@ -20,7 +22,7 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000',
+    backgroundColor: 'slategrey',
   },
 
 });

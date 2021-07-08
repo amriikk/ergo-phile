@@ -9,8 +9,8 @@ export default class Header extends Component {
           <View style={ styles.profilePicWrap }>
             <Image style= { styles.profilePic } source={require('../img/selfie.png')} />
           </View>
-          <Text style={styles.name}>JHON TRUJILLO</Text>
-          <Text style={styles.pos}> - software engineer - </Text>
+          <Text style={styles.name}>J H O N  T R U J I L L O</Text>
+          <Text style={styles.pos}> - pokémon master - </Text>
         </View>
       </ImageBackground>
     );
