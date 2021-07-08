@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { AppRegistry, StyleSheet, Text, View, Image, ImageBackground } from 'react-native';
+import { AppRegistry, StyleSheet, View } from 'react-native';
 
+import PhotoGrid from './components/PhotoGrid';
 import Header from './components/Header';
 import Bar from './components/Bar';
 
@@ -10,6 +11,7 @@ export default class App extends Component {
       <View style={styles.container}>
         <Header />
         <Bar />
+        <PhotoGrid />
       </View>
     );
   }

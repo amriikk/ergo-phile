@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AppRegistry, StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 
 export default class Bar extends Component {
     render() {
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     barItem: {
         flex: 1,
         padding: 18,
-        alightItems: 'center'
+        alignItems: 'center',
     },
     barTop: {
         color: '#fff',
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
         fontStyle: 'italic',
     },
     barBottom: {
-        color: '#fff',
+        color: 'blue',
         fontSize: 14,
         fontWeight: 'bold',
     },
