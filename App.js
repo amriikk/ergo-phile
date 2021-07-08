@@ -48,10 +48,14 @@ const styles = StyleSheet.create({
     width: null,
     alignSelf: 'stretch',
     borderRadius: 100,
-    borderColor: '#fff'
+    borderColor: '#fff',
+    borderWidth: 4,
   },
   name: {
-
+    marginTop: 20,
+    fontSize: 18,
+    color: '#fff',
+    fontWeight: 'bold',
   },
   pos: {
 
