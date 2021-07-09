@@ -9,8 +9,8 @@ export default class Header extends Component {
           <View style={ styles.profilePicWrap }>
             <Image style= { styles.profilePic } source={require('../img/selfie.png')} />
           </View>
-          <Text style={styles.name}>J H O N  T R U J I L L O</Text>
-          <Text style={styles.pos}> - pokémon master - </Text>
+          <Text style={styles.name}> J H O N  T R U J I L L O </Text>
+          <Text style={styles.pos}> - software engineer - </Text>
         </View>
       </ImageBackground>
     );
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     padding: 20,
-    backgroundColor: 'rgba(130,190,240, 0.9)' //favorite sky blue color
+    backgroundColor: 'rgba(130,190,240,0.9)' //favorite sky blue color
   },
   profilePicWrap: {
     width: 200,
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
   pos: {
     fontSize: 14,
     color: '#000080', //navy blue
-    fontWeight: '300',
+    fontWeight: 'bold',
     fontStyle: 'italic'
   },
 });
