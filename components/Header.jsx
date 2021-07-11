@@ -13,9 +13,8 @@ export default class Header extends Component {
           <Text style={styles.pos}> - software engineer - </Text>
           <br/>
           <Text style={styles.pos}> Self-motivated Software Engineer with cross-functional agility and ability to independently lead and meet objectives in a fast paced, rapidly changing environment through analytical thinking and creative problem solving. Able to apply customer service concepts to app development to improve user experience for clients, employees and administration.
-
-Skills: HTML5 | Javascript | CSS | MatLab | Objective C | Swift | Python | C++ | Java | Bootstrap | MongoDb
-Node.js | Xcode | Eclipse | jGrasp | Visual Studio | Dreamweaver | MS Office | WordPress | Mongoose | Redux | Firebase | GraphQL | ml5.js | TensorFlow.js </Text>
+            Skills: HTML5 | Javascript | CSS | MatLab | Objective C | Swift | Python | C++ | Java | Bootstrap | MongoDb
+            Node.js | Xcode | Eclipse | jGrasp | Visual Studio | Dreamweaver | MS Office | WordPress | Mongoose | Redux | Firebase | GraphQL | ml5.js | TensorFlow.js </Text>
         </View>
       </ImageBackground>
     );
