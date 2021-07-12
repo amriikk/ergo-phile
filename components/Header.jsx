@@ -12,9 +12,13 @@ export default class Header extends Component {
           <Text style={styles.name}> J H O N  T R U J I L L O </Text>
           <Text style={styles.pos}> - software engineer - </Text>
           <br/>
-          <Text style={styles.pos}> Self-motivated Software Engineer with cross-functional agility and ability to independently lead and meet objectives in a fast paced, rapidly changing environment through analytical thinking and creative problem solving. Able to apply customer service concepts to app development to improve user experience for clients, employees and administration.
-            Skills: HTML5 | Javascript | CSS | MatLab | Objective C | Swift | Python | C++ | Java | Bootstrap | MongoDb
-            Node.js | Xcode | Eclipse | jGrasp | Visual Studio | Dreamweaver | MS Office | WordPress | Mongoose | Redux | Firebase | GraphQL | ml5.js | TensorFlow.js </Text>
+          <View>
+            <Text style={styles.info}>
+                Self-motivated Software Engineer with cross-functional {'\n'} agility 
+                and ability to independently lead and meet objectives {'\n'} in a fastpaced, 
+                rapidly changing environment through analytical {'\n'}thinking and creative problem solving. 
+            </Text>
+          </View>
         </View>
       </ImageBackground>
     );
@@ -67,6 +71,13 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontStyle: 'italic'
   },
+  info: {
+      fontSize: 10,
+      padding: 8,
+      alignSelf: 'center',
+      backgroundColor: 'cyan',
+      borderRadius: 8,
+  }
 });
 
 // AppRegistry.registerComponent('Header', () => Header); 
